@@ -183,7 +183,19 @@ I obtained a Masters and Bachelors in Mathematics from the <a href="https://www.
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 preview">
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/data_streams.gif" class="preview z-depth-1 rounded" width="auto" height="auto" alt="data_streams.gif" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+</div>
 
         <!-- Entry bib key -->
         <div id="mfs_cfe_2023" class="col-sm-8">
@@ -207,6 +219,7 @@ I obtained a Masters and Bachelors in Mathematics from the <a href="https://www.
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
             <a href="https://eprint.iacr.org/2023/1366" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
           </div>
@@ -216,7 +229,11 @@ I obtained a Masters and Bachelors in Mathematics from the <a href="https://www.
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          <!-- Hidden bibtex block -->
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Count-Min Sketch (CMS) and HeavyKeeper (HK) are two realizations of a compact frequency estimator (CFE).  These are a class of probabilistic data structures that maintain a compact summary of (typically) high-volume streaming data, and provides approximately correct estimates of the number of times any particular element has appeared. CFEs are often the base structure in systems looking for the highest-frequency elements (i.e., top-K elements, heavy hitters, elephant flows).  Traditionally, probabilistic guarantees on the accuracy of frequency estimates are proved under the implicit assumption that stream elements do not depend upon the internal randomness of the structure. Said another way, they are proved in the presence of data streams that are created by non-adaptive adversaries.  Yet in many practical use-cases, this assumption is not well-matched with reality; especially, in applications where malicious actors are incentivized to manipulate the data stream.  We show that the CMS and HK structures can be forced to make significant estimation errors, by concrete attacks that exploit adaptivity.  We analyze these attacks analytically and experimentally, with tight agreement between the two.  Sadly, these negative results seem unavoidable for (at least) sketch-based CFEs with parameters that are reasonable in practice. On the positive side, we give a new CFE (Count-Keeper) that can be seen as a composition of the CMS and HK structures. Count-Keeper estimates are typically more accurate (by at least a factor of two) than CMS for “honest” streams; our attacks against CMS and HK are less effective (and more resource intensive) when used against Count-Keeper; and Count-Keeper has a native ability to flag estimates that are suspicious, which neither CMS or HK (or any other CFE, to our knowledge) admits.</p>
+          </div>
+<!-- Hidden bibtex block -->
           <div class="bibtex hidden">
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">mfs_cfe_2023</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Compact Frequency Estimators in Adversarial Environments}</span><span class="p">,</span>
@@ -280,7 +297,7 @@ I obtained a Masters and Bachelors in Mathematics from the <a href="https://www.
           <em>In CCS ’22: Proceedings of the 2022 ACM SIGSAC Conference on Computer and Communications Security</em>, Nov 2022
         </div>
         <div class="periodical">
-          Accepted: 2022-11-22T08:06:05Z
+          
         </div>
 
           <!-- Links/Buttons -->
@@ -313,7 +330,6 @@ I obtained a Masters and Bachelors in Mathematics from the <a href="https://www.
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Filić, Mia and Paterson, Kenneth and Unnikrishnan, Anupama and Virdia, Fernando}</span><span class="p">,</span>
   <span class="na">month</span> <span class="p">=</span> <span class="nv">nov</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
-  <span class="na">note</span> <span class="p">=</span> <span class="s">{Accepted: 2022-11-22T08:06:05Z}</span><span class="p">,</span>
   <span class="na">keywords</span> <span class="p">=</span> <span class="s">{mypapers}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{1037--1050}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
