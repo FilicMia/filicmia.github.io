@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adversarial Correctness and Privacy for Probabilistic Data Structures @ ACM CCS 2022.
+title: Adversarial Correctness and Privacy for Probabilistic Data Structures @ ACM CCS 2022
 date: 2022-11-07 
 inline: false
 related_posts: false
