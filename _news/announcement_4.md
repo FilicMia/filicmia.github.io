@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Talk @ FU Berlin Cybersecurity & AI seminar
-date: 2024-28-02
+date: 2024-02-28
 inline: false
 related_posts: false
 ---
