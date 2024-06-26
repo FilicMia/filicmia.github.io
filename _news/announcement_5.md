@@ -10,4 +10,4 @@ related_posts: false
 
 I presented my work on frequency estimators (such as Count-Min Sketch and HeavyKeeper) in the presence of adversaries, "Compact Frequency Estimators in Adversarial Environments" (by Sam A. Markelon, Mia Filić and Thomas Shrimpton).
 
-Talk video: https://www.youtube.com/watch?v=EZzSEvqMmKA 
+Talk video can be found [here](https://www.youtube.com/watch?v=EZzSEvqMmKA). 
