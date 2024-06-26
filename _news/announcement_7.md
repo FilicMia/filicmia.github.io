@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Workshop @ Summer School on real-world crypto and privacy 2024, Vodice, Croatia
-date: 2022-06-04 
+date: 2024-06-04 
 inline: false
 related_posts: false
 ---
