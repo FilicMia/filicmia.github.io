@@ -18,7 +18,7 @@ social: true  # includes social icons at the bottom of the page
 
 # bio
 I am a PhD student at [ETH Zurich](https://appliedcrypto.ethz.ch/) under the supervision of [Kenny Paterson](https://inf.ethz.ch/people/person-detail.paterson.html).
-I obtained a Masters and Bachelors in Mathematics from the [University of Zagreb](https://www.pmf.unizg.hr/math/en).
+I completed both my bachelor’s and master’s degrees in Mathematics at the University of Zagreb [University of Zagreb](https://www.pmf.unizg.hr/math/en).
 
 # research
 I am interested in cryptography and probabilistic data structures.
