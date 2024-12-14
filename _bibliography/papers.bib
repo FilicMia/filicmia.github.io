@@ -12,13 +12,69 @@
   preview={brownian-motion.gif}
 }
 
+@inproceedings{fkku_AC24,
+	title = {Deletions and Dishonesty: Probabilistic Data Structures in Adversarial Settings},
+	author = {Mia Filić and Keran Kocher and Ella Kummer and Anupama Unnikrishnan},
+	abstract= {Probabilistic data structures (PDS) are compact representations of high-volume data that provide approximate answers to queries about the data. They are commonplace in today's computing systems, finding use in databases, networking and more. While PDS are designed to perform well under benign inputs, they are frequently used in applications where inputs may be adversarially chosen. This may lead to a violation of their expected behaviour, for example an increase in false positive rate.},
+	language = {en},
+	booktitle = {{Asiacrypt} '24},
+	month = dec,
+	year = {2024},
+	preview={data_streams.gif},
+	keywords = {mypapers},
+	bibtex_show={true},
+	selected={true},
+	html={https://eprint.iacr.org/2024/1911}
+}
+
+@inproceedings{ffv_CoNEXT24,
+	author = {Francolla, Dimitri and Fili\'{c}, Mia and Veitch, Shannon},
+	title = {Privacy Implications of AMQ-Based PQ TLS Authentication},
+	year = {2024},
+	language = {en},
+	booktitle = {{CoNEXT} '24},
+	month = dec,
+	year = {2024},
+	keywords = {mypapers},
+	bibtex_show={false},
+	selected={true},
+	html={https://dl.acm.org/doi/10.1145/3680121.3697813}
+}
+
+@inproceedings{bfm_eprint24,
+      	author = {Nicholas Brandt and Mia Filić and Sam A. Markelon},
+      	title = {A Formal Treatment of Key Transparency Systems with Scalability Improvements},
+	abstract= {Key Transparency (KT) systems have emerged as a critical technology for securely distributing and verifying the correctness of public keys used in end-to-end encrypted messaging services. Despite substantial academic interest, increased industry adoption, and IETF standardization efforts, KT systems lack a holistic and formalized security model, limiting their resilience to practical threats and constraining future development. In this paper, we introduce the first cryptographically sound formalization of KT as an ideal functionality, clarifying the assumptions, security properties, and potential vulnerabilities of deployed KT systems. We identify a significant security concern — a possible impersonation attack by a malicious service provider — and propose a backward-compatible solution. Additionally, we address a core scalability bottleneck by designing and implementing a novel, privacy-preserving verifiable Bloom filter (VBF) that significantly improves KT efficiency without compromising security. Experimental results demonstrate the effectiveness of our approach, marking a step forward in both the theoretical and practical deployment of scalable KT solutions.},
+	language = {en},
+	booktitle = {{eprint}},
+	month = dec,
+	year = {2024},
+	keywords = {mypapers},
+	bibtex_show={false},
+	selected={true},
+	html={https://eprint.iacr.org/2024/1938}
+}
+
+
+@inproceedings{vf_eprint24,
+	author = {Fernando Virdia and Mia Filić},
+      	title = {A note on securing insertion-only Cuckoo filters},
+	language = {en},
+	booktitle = {eprint},
+	month = april,
+	year = {2024},
+	preview={data_streams.gif},
+	keywords = {mypapers},
+	bibtex_show={false},
+	selected={true},
+	html={https://eprint.iacr.org/2024/520}
+}
+
 @inproceedings{mfs_cfe_2023,
 	title = {Compact Frequency Estimators in Adversarial Environments},
-	copyright = {http://rightsstatements.org/page/InC-NC/1.0/},
 	abstract = {Count-Min Sketch (CMS) and HeavyKeeper (HK) are two realizations of a compact frequency estimator (CFE).  These are a class of probabilistic data structures that maintain a compact summary of (typically) high-volume streaming data, and provides approximately correct estimates of the number of times any particular element has appeared. CFEs are often the base structure in systems looking for the highest-frequency elements (i.e., top-K elements, heavy hitters, elephant flows).  Traditionally, probabilistic guarantees on the accuracy of frequency estimates are proved under the implicit assumption that stream elements do not depend upon the internal randomness of the structure. Said another way, they are proved in the presence of data streams that are created by non-adaptive adversaries.  Yet in many practical use-cases, this assumption is not well-matched with reality; especially, in applications where malicious actors are incentivized to manipulate the data stream.  We show that the CMS and HK structures can be forced to make significant estimation errors, by concrete attacks that exploit adaptivity.  We analyze these attacks analytically and experimentally, with tight agreement between the two.  Sadly, these negative results seem unavoidable for (at least) sketch-based CFEs with parameters that are reasonable in practice. On the positive side, we give a new CFE (Count-Keeper) that can be seen as a composition of the CMS and HK structures. Count-Keeper estimates are typically more accurate (by at least a factor of two) than CMS for ``honest'' streams; our attacks against CMS and HK are less effective (and more resource intensive) when used against Count-Keeper; and Count-Keeper has a native ability to flag estimates that are suspicious, which neither CMS or HK (or any other CFE, to our knowledge) admits.},
 	language = {en},
-	booktitle = {{CCS} '23: {Proceedings} of the 2023 {ACM} {SIGSAC} {Conference} on {Computer} and {Communications} {Security}},
-	publisher = {Association for Computing Machinery},
+	booktitle = {{CCS} '23},
 	author = {Sam A. Markelon and Mia Filić and Thomas Shrimpton},
 	month = nov,
 	year = {2023},
@@ -26,19 +82,14 @@
 	keywords = {mypapers},
 	bibtex_show={true},
 	selected={true},
-	html={https://eprint.iacr.org/2023/1366.pdf}
+	html={https://eprint.iacr.org/2023/1366}
 }
 
 @inproceedings{filic_adversarial_2022,
 	title = {Adversarial {Correctness} and {Privacy} for {Probabilistic} {Data} {Structures}},
-	copyright = {http://rightsstatements.org/page/InC-NC/1.0/},
 	abstract={We study the security of Probabilistic Data Structures (PDS) for handling Approximate Membership Queries (AMQ); prominent examples of AMQ-PDS are Bloom and Cuckoo filters. AMQ-PDS are increasingly being deployed in environments where adversaries can gain benefit from carefully selecting inputs, for example to increase the false positive rate of an AMQ-PDS. They are also being used in settings where the inputs are sensitive and should remain private in the face of adversaries who can access an AMQ-PDS through an API or who can learn its internal state by compromising the system running the AMQ-PDS. We develop simulation-based security definitions that speak to correctness and privacy of AMQ-PDS. Our definitions are general and apply to a broad range of adversarial settings. We use our definitions to analyse the behaviour of both Bloom filters and insertion-only Cuckoo filters. We show that these AMQ-PDS can be provably protected through replacement or composition of hash functions with keyed pseudorandom functions in their construction. We also examine the practical impact on storage size and computation of providing secure instances of Bloom and insertion-only Cuckoo filters.},
-	isbn = {978-1-4503-9450-5},
-	url = {https://www.research-collection.ethz.ch/handle/20.500.11850/569894},
 	language = {en},
-	urldate = {2023-06-21},
-	booktitle = {{CCS} '22: {Proceedings} of the 2022 {ACM} {SIGSAC} {Conference} on {Computer} and {Communications} {Security}},
-	publisher = {Association for Computing Machinery},
+	booktitle = {{CCS} '22},
 	author = {Mia Filić and Kenneth Paterson and Anupama Unnikrishnan and Fernando Virdia},
 	month = nov,
 	year = {2022},
@@ -47,7 +98,7 @@
 	pages = {1037--1050},
         bibtex_show={true},
 	selected={true},
-	html={https://eprint.iacr.org/2022/1186.pdf}
+	html={https://eprint.iacr.org/2022/1186}
 }
 
 @inproceedings{filic_modelling_2018,
