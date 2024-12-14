@@ -1,22 +1,22 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Mia Filić
-    - name: Date of Birth
-      value: 5th July 1993
-    - name: Languages
-      value: Croatian, English, German (B1)
+# - title: General Information
+#   type: map
+#   contents:
+#     - name: Full Name
+#       value: Mia Filić
+#     - name: Date of Birth
+#       value: 5th July 1993
+#     - name: Languages
+#       value: Croatian, English, German (B1)
 
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD
-      institution: ETH Zurich, Zurich, Switzerland
-      year: 2019-now
-    - title: MSc Mathematics and Computer Science
-      institution: University of Zagreb, Zagreb, Croatia
-      year: 2017
+# - title: Education
+#   type: time_table
+#   contents:
+#     - title: PhD
+#       institution: ETH Zurich, Zurich, Switzerland
+#       year: 2019-now
+#     - title: MSc Mathematics and Computer Science
+#       institution: University of Zagreb, Zagreb, Croatia
+#       year: 2017
 
 # - title: Experience
 #   type: time_table
@@ -32,12 +32,12 @@
 #         - Teaching assistant for the course "Linear Algebra" (3 times)
 
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 2019
-      items: 
-        - URSI AP-RASC Student Paper Competition Award
-    - year: 2018
-      items: 
-        - 2018 URSI Young Researcher Award
+# - title: Honors and Awards
+#   type: time_table
+#   contents:
+#     - year: 2019
+#       items: 
+#         - URSI AP-RASC Student Paper Competition Award
+#     - year: 2018
+#       items: 
+#         - 2018 URSI Young Researcher Award
